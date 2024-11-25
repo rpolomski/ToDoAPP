@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:text="Sample Job"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <!-- Zmiana na LinearLayout poziomy -->
+    <LinearLayout
+        android:background="#33FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Job done?"
+            android:textSize="16sp" /> <!-- Używamy layout_weight, by ten TextView rozciągnął się na lewą stronę -->
+
+        <CheckBox
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bodyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sample Job"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+</LinearLayout>
